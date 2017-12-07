@@ -16,7 +16,6 @@ credentials_json_data = {}
 response = supercode.call(
     "super-code-function",
     "your-supercode-api-key",
-    method_name,
     credentials_json_data,
     spreadsheet_id,
     range_name
@@ -43,7 +42,7 @@ example:
       "client_x509_cert_url": ""
     }'
     
-    python test.py --method_name="update" --credentials_json_data=$json_data --spreadsheet_id="<your spreadsheet id>" --range_name="Sheet1\!A1:B1"
+    python test.py --credentials_json_data=$json_data --spreadsheet_id="<your spreadsheet id>" --range_name="Sheet1\!A1:B1"
 
 
 **Note:** Supercode has not been launched yet. This is for internal testing only.
